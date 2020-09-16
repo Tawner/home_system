@@ -31,18 +31,18 @@ class BaseConfig(object):
 
 class DevelopmentConfig(BaseConfig):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:qazplm123@longjiangtao.top:3306/home_system?charset=utf8'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:xxxx@127.0.0.1:3306/home_system?charset=utf8'
     WEB_HOST_NAME = 'http://127.0.0.1:5000/'
 
 
 class TestingConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:qazplm123@longjiangtao.top:3306/home_system?charset=utf8'
-    WEB_HOST_NAME = 'http://home.tawner.top/'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:xxxx@127.0.0.1:3306/home_system?charset=utf8'
+    WEB_HOST_NAME = 'http://127.0.0.1:5000/'
 
 
 class ProductionConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:qazplm123@longjiangtao.top:3306/home_system?charset=utf8'
-    WEB_HOST_NAME = 'http://home.tawner.top/'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:xxxx@127.0.0.1:3306/home_system?charset=utf8'
+    WEB_HOST_NAME = 'http://127.0.0.1:5000/'
 
 
 config = {
